@@ -573,7 +573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 120449339}
   - component: {fileID: 120449341}
-  - component: {fileID: 120449340}
+  - component: {fileID: 120449342}
   m_Layer: 0
   m_Name: Plan 4
   m_TagString: Untagged
@@ -590,25 +590,12 @@ Transform:
   m_GameObject: {fileID: 120449338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08, y: 0.44, z: 10}
+  m_LocalPosition: {x: 0.08000009, y: 0.44000018, z: 10}
   m_LocalScale: {x: 2.5396173, y: 2.3716254, z: 0.1538225}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &120449340
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120449338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3acf8163308f547abcb17d164b31e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0, y: 0}
 --- !u!212 &120449341
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -661,6 +648,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &120449342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 120449338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc62ed71a1a44b04d9cbe1ac2deb26d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplierX: 0
+  parallaxMultiplierY: 0
 --- !u!4 &134001809 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2960921443691879895, guid: d3c40d669ba477644bf09b588f756fa1, type: 3}
@@ -2216,7 +2217,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529678218}
   - component: {fileID: 529678217}
-  - component: {fileID: 529678216}
+  - component: {fileID: 529678219}
   m_Layer: 0
   m_Name: Plan 2
   m_TagString: Untagged
@@ -2224,19 +2225,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &529678216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 529678215}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3acf8163308f547abcb17d164b31e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.6, y: 0.3}
 --- !u!212 &529678217
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2304,6 +2292,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1986857947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &529678219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529678215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc62ed71a1a44b04d9cbe1ac2deb26d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplierX: 0.6
+  parallaxMultiplierY: 0.2
 --- !u!1001 &539128391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3918,7 +3920,7 @@ GameObject:
   m_Component:
   - component: {fileID: 960134615}
   - component: {fileID: 960134614}
-  - component: {fileID: 960134613}
+  - component: {fileID: 960134616}
   m_Layer: 0
   m_Name: Plan 1
   m_TagString: Untagged
@@ -3926,19 +3928,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &960134613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960134612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3acf8163308f547abcb17d164b31e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.4, y: 0.1}
 --- !u!212 &960134614
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4006,6 +3995,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1986857947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &960134616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960134612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc62ed71a1a44b04d9cbe1ac2deb26d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplierX: 0.4
+  parallaxMultiplierY: 0.2
 --- !u!1 &965837196
 GameObject:
   m_ObjectHideFlags: 0
@@ -4720,7 +4723,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1232986305}
   - component: {fileID: 1232986304}
-  - component: {fileID: 1232986303}
+  - component: {fileID: 1232986306}
   m_Layer: 0
   m_Name: Plan 3
   m_TagString: Untagged
@@ -4728,19 +4731,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1232986303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1232986302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ad3acf8163308f547abcb17d164b31e2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxEffectMultiplier: {x: 0.7, y: 0.5}
 --- !u!212 &1232986304
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4808,6 +4798,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1986857947}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1232986306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1232986302}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc62ed71a1a44b04d9cbe1ac2deb26d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxMultiplierX: 0.7
+  parallaxMultiplierY: 0.1
 --- !u!1 &1284884649
 GameObject:
   m_ObjectHideFlags: 0
