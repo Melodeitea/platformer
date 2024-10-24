@@ -6,18 +6,21 @@ public class explanations : MonoBehaviour
 {
 	/*
 	 * Basically quick summary for what I've added, references and stuff
-	 * those with // havent been made yet on 17/10 but will i even remember to update this? (i actually did!)
+	 * those with // havent been made yet on 25/10 but will i even remember to update this? (i actually did!)
 	 * 
 	 * collectables : inventory items (btw yes the sun is totally useless but i found the animation n thought it was cute I'm just a girl (rlly hoping you won't check that doc it's a lot of brainrot))
 	 *					money counter (see if I've added the buying/selling system i wanted to do cuw idk if i'll remember to update this doc
 	 * controller mecanic : dash
 	 * random feature : for now I've got the inventory
-	 *					Parallax background
+	 *					Parallax background (fixed w/ 3D camera
 	 *					we also got the animations (hoping they won't break i almost died making them (no joke)
 	 *					very simple Level design (that shows background anim + dash mechanic) if I don't die doing the rest of my homework (probs will, why the fuck do i have to do logos when i'm literally in game design and not graphic design (that means you should check on my vitals if there's no level design)
 	 *					//Health potions that actually work (don't think i'll do this one tho bc then I'd have to code a health bar and so enemies and so attacks unless i do some booby traps?
 	 *					//booby traps???
-	 *					//health + health potion + degats + attaques + sound design + selling/buying (market)
+	 *					//health + 
+	 *					health potion + 
+	 *					degats + 
+	 *					attaques + sound design
 	 *					
 	 *  Now for the references
 	 *	official debugger : Maxence in third year (hire him) helped me fix my broken physics on my dash (also said my serialized fields and coroutines were cool so yes thank you for the praise i love it) 

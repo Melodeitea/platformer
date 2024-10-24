@@ -36,6 +36,11 @@ public class Character : MonoBehaviour
 	public float coyoteCounter = 0;
 	//Coroutine Dash;
 
+	[Header("Health")]
+	public int maxHealth = 100;
+	public int currentHealth;
+	public HealthBar healthBar;
+
 	// PRIVATE
 	private Rigidbody2D rb;
 	private Vector2 colliderSize;
@@ -57,6 +62,9 @@ public class Character : MonoBehaviour
 		{
 			// Debug.LogError("Animator not assigned!");
 		}
+
+		currentHealth = maxHealth;
+		healthBar.SetMaxHealth(maxHealth);
 	}
 
 	// A chaque frame
@@ -81,6 +89,11 @@ public class Character : MonoBehaviour
 
 		// Add temporary movement for testing without InputSystem
 		playerMoveInput.x = Input.GetAxisRaw("Horizontal");
+
+		if (Input.GetKeyDown(KeyCode.LeftAlt))
+		{
+			TakeDamage(20);
+		}
 	}
 
 	// A chaque fixed frame
@@ -110,6 +123,12 @@ public class Character : MonoBehaviour
 		}
 	}
 
+	void TakeDamage(int damage)
+	{
+		currentHealth -= damage;
+
+		healthBar.SetHealth(currentHealth);
+	}
 
 	//--- Move ---//
 
