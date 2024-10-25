@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 654148127115568765}
   - component: {fileID: 4245040454549316424}
   - component: {fileID: 8623063008891667865}
+  - component: {fileID: -257000570726947599}
   m_Layer: 5
   m_Name: Health button
   m_TagString: Untagged
@@ -120,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654148127115568765}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: -257000570726947599}
+        m_TargetAssemblyTypeName: HealthItem, Assembly-CSharp
+        m_MethodName: Use
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &8623063008891667865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,3 +147,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item: {fileID: 3793200357531916965, guid: 95972c3990dfe0249acb972f0470f480, type: 3}
+--- !u!114 &-257000570726947599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434082466123998013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28056d1cda32e1149a9ab69459f9310f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effect: {fileID: 1311468735239996, guid: 6c596e916a399a44e85fca6172486943, type: 3}
+  Regain: 30

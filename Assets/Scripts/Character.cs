@@ -89,11 +89,6 @@ public class Character : MonoBehaviour
 
 		// Add temporary movement for testing without InputSystem
 		playerMoveInput.x = Input.GetAxisRaw("Horizontal");
-
-		if (Input.GetKeyDown(KeyCode.LeftAlt))
-		{
-			TakeDamage(20);
-		}
 	}
 
 	// A chaque fixed frame
@@ -110,6 +105,12 @@ public class Character : MonoBehaviour
 	// Gère les événements de collision
 	private void OnTriggerEnter2D(Collider2D collision)
 	{
+		if(collision.CompareTag("Trap"))
+		{
+			TakeDamage(collision.gameObject.GetComponent<Trap>().damageAmount);
+		}
+		// Other checks like DeathZone, CheckPoint, etc.
+
 		// DeathZone
 		if (collision.gameObject.layer == 15)
 		{
@@ -123,11 +124,45 @@ public class Character : MonoBehaviour
 		}
 	}
 
-	void TakeDamage(int damage)
+
+	public void RegainHealth(int life)
+	{
+		currentHealth += life;
+		Debug.Log("player regained health! current health: " + currentHealth);
+
+		//update the health bar
+		if (healthBar != null)
+		{
+			healthBar.SetHealth(currentHealth);
+		}
+
+		if (currentHealth >= 100)
+		{
+			//player can't take more
+			Debug.Log("player has full life!");
+		}
+
+	}
+
+	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
+		Debug.Log("player took damage! current health: " +currentHealth);
 
-		healthBar.SetHealth(currentHealth);
+		//update the health bar
+		if (healthBar != null)
+		{
+			healthBar.SetHealth(currentHealth);
+		}
+
+		if (currentHealth <=0)
+		{
+			//player dies
+			Debug.Log("player has died!");
+			Die();
+			//re-using this
+		}
+
 	}
 
 	//--- Move ---//

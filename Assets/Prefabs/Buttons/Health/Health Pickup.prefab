@@ -162,3 +162,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   effect: {fileID: 1311468735239996, guid: 6c596e916a399a44e85fca6172486943, type: 3}
+  Regain: 30
