@@ -5,11 +5,18 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public CanvasGroup canvasGroup;
+    LoadManager loadManager;
+    public bool isPaused = false;
 
-	private void Start()
+    bool[] myBools = new bool[100];
+	bool[,] myBools2 = new bool[3,3];
+
+
+	void Start()
 	{
-		
+		loadManager = GameObject.FindGameObjectWithTag("LoadManager").GetComponent<LoadManager>();
         TogglePause(false);
+        myBools[0] = true;
 
 	}
 
@@ -28,13 +35,13 @@ public class PauseMenu : MonoBehaviour
 			HideMenu();
 		}
 
-    public void ShowMenu()
+     void ShowMenu()
     {
         CanvasGroup.alpha = 1;
         CanvasGroup.interactable = true;
         CanvasGroup.blocksRaycasts = true;
     }
-    public void HideMenu()
+     void HideMenu()
     {
 		CanvasGroup.alpha = 0;
 		CanvasGroup.interactable = false;

@@ -10,15 +10,7 @@ public class MainMenu : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
-        GameObject lm = GameObject.FindGameObjectWithTag("LoadManager");
-        if (lm != null)
-        {
-            loadManager = lm.GetComponent<LoadManager>();
-            return;
-        }
-
-		loadManager = Instantiate(loadManagerPrefab, null).GetComponent<LoadManager>();
+        loadManager = Instantiate(loadManagerPrefab, null).GetComponent<LoadManager>();
 
 	}
 
