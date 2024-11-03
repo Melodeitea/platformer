@@ -37,15 +37,15 @@ public class PauseMenu : MonoBehaviour
 
      void ShowMenu()
     {
-        CanvasGroup.alpha = 1;
-        CanvasGroup.interactable = true;
-        CanvasGroup.blocksRaycasts = true;
+        canvasGroup.alpha = 1;
+        canvasGroup.interactable = true;
+        canvasGroup.blocksRaycasts = true;
     }
      void HideMenu()
     {
-		CanvasGroup.alpha = 0;
-		CanvasGroup.interactable = false;
-		CanvasGroup.blocksRaycasts = false;
+		canvasGroup.alpha = 0;
+		canvasGroup.interactable = false;
+		canvasGroup.blocksRaycasts = false;
 	}
 }
 }
